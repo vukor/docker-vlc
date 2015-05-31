@@ -1,0 +1,6 @@
+new video broadcast loop
+setup video input rtsp://user:password@url:port/play1.sdp
+setup video output "#transcode{vcodec=h264,acodec=mp3,channels=2,samplerate=44100}:std{access=file,mux=mp4,dst=/home/vlc/rec/`date +%Y-%m-%d_%H:%M`.record.m4v}"
+setup video enabled
+control video play
+
