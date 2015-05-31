@@ -1,0 +1,14 @@
+recording:
+    image: vukor/vlc
+    volumes:
+        - .vlc/etc/vlc-rec.vlm:/etc/vlc-rec.vlm
+        - rec:/home/vlc/rec
+    command: cvlc --vlm-conf /etc/vlc-rec.vlm -f --play-and-exit --run-time=20
+translation:
+    image: vukor/vlc
+    volumes:
+        - .vlc/etc/vlc-translation.vlm:/etc/vlc-translation.vlm
+    ports:
+        - "8094:8094"
+    command: cvlc --vlm-conf /etc/vlc-translation.vlm
+
