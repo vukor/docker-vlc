@@ -9,6 +9,6 @@ translation:
     volumes:
         - .vlc/etc/vlc-translation.vlm:/etc/vlc-translation.vlm
     ports:
-        - "8094:8094"
+        - "8001:8001"
     command: cvlc --vlm-conf /etc/vlc-translation.vlm
 

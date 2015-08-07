@@ -11,8 +11,19 @@ How it's work
 
     ``$ git clone https://vukor@github.com/vukor/docker-vlc.git ~/docker``
 
-2. Install docker on your system
-3. In process..
+2. Install docker, docker-compose in your system
+
+3. If your system is CentOS 6.x run:
+
+    `` $cd .vlc && ln -s Dockerfile-CentOS-6 Dockerfile ``
+
+4. If your system is CentOS 7.x run:
+
+    `` $cd .vlc && ln -s Dockerfile-CentOS-7 Dockerfile ``
+
+5. Setup your scripts or vlm-configurations, edit docker-compose.yaml and run:
+
+    `` $docker-compose up -d  ``
 
 
 share dirs
